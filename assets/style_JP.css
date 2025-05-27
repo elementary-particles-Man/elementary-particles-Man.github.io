@@ -1,0 +1,320 @@
+/* assets/style_JP.css - For Japanese LSC Website */
+
+/* Basic Reset & Normalization */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; /* Japanese font stack */
+    line-height: 1.75; /* Adjusted for Japanese readability */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Page background for both index and docs */
+    color: #333;
+    font-size: 10pt; /* Base font size for Japanese */
+}
+
+/* --- Styles for index.html (2-column layout) --- */
+.header-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.page-container { /* Used for index.html's 2-column structure */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.main-content { /* For index.html */
+    flex: 3;
+    padding: 25px;
+    min-width: 60%;
+    /* border-right: 1px solid #eee; Removed to be consistent with ENG potentially */
+}
+
+.main-content h1 { /* For index.html h1 */
+    text-align: center;
+    color: #003366;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+.profile-image-container { /* For index.html */
+    margin-bottom: 20px;
+}
+
+.profile-image-container img { /* For index.html */
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.profile-details p { /* For index.html */
+    margin-bottom: 0.5em;
+    text-indent: 0;
+    text-align: left;
+}
+.profile-details a { /* For index.html */
+    color: #0056b3;
+    text-decoration: none;
+}
+.profile-details a:hover { /* For index.html */
+    text-decoration: underline;
+}
+
+.sidebar { /* For index.html */
+    flex: 1;
+    padding: 25px;
+    background-color: #f9f9f9;
+    min-width: 220px;
+    border-left: 1px solid #eee; /* Separator for sidebar */
+}
+
+.sidebar h3 { /* For index.html */
+    margin-top: 0;
+    color: #003366;
+    font-size: 1.3em;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.sidebar ul { /* For index.html */
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+.sidebar ul li { /* For index.html */
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a { /* For index.html */
+    text-decoration: none;
+    color: #0056b3;
+    font-size: 0.95em;
+}
+
+.sidebar ul li a:hover { /* For index.html */
+    text-decoration: underline;
+    color: #003366;
+}
+
+.sidebar hr { /* For index.html */
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+/* --- Styles for Document Pages (Manifesto, Core Concept) --- */
+.container { /* Used for document pages like Manifesto, Core Concept */
+    margin: 2cm auto;
+    max-width: 18cm; /* A4-like content width */
+    padding: 2em;
+    background-color: #fff; /* Content area background */
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Headings for Document Pages */
+.container h1 {
+    text-align: center;
+    color: #003366;
+    font-size: 20pt; /* Adjusted for Japanese docs, was 22pt in ENG */
+    margin-top: 0;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 0.5em;
+}
+
+.container h2 { /* e.g., "LSC コア原則 詳細解説" */
+    color: #004488;
+    font-size: 16pt; /* Adjusted for Japanese docs, was 18pt in ENG */
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 0.3em;
+}
+
+.container h3 { /* e.g., "1. 異常こそ尊い" */
+    color: #336699;
+    font-size: 13pt; /* Adjusted for Japanese docs, was 14pt in ENG */
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+.container h4 { /* e.g., "コア構想から導かれる共通認識の例：" */
+    color: #003366;
+    font-size: 1.1em; /* Relative to parent (.supplementary-note) */
+    margin-top: 0;
+    margin-bottom: 0.7em;
+    text-indent: 0;
+}
+
+
+/* Paragraphs and Text elements for Document Pages */
+.container p {
+    text-indent: 1em;
+    margin-bottom: 1em;
+    text-align: justify;
+    line-height: 1.8; /* Ensure good line height for Japanese text */
+}
+
+.container strong {
+    font-weight: bold;
+}
+
+.container u {
+    text-decoration: underline;
+    text-decoration-color: #555;
+    text-decoration-thickness: 1px;
+}
+
+.container blockquote {
+    font-style: italic;
+    color: #555;
+    padding-left: 1.5em;
+    border-left: 3px solid #ccc;
+    margin: 0.8em 0 0.8em 1em;
+}
+
+/* Special Sections for Document Pages */
+.container .supplementary-note {
+    background-color: #eef2f7;
+    padding: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border-left: 5px solid #003366;
+    font-size: 0.95em;
+}
+
+.container .supplementary-note p {
+    text-indent: 0;
+}
+
+.container .example-section {
+    margin-top: 1em;
+    padding-left: 1em;
+    border-left: 3px solid #77aaff;
+}
+
+.container .example-section p {
+     margin-bottom: 0.5em;
+}
+
+/* Footnotes for Document Pages */
+.container .footnote-section {
+    margin-top: 3em;
+    padding-top: 1em;
+    border-top: 1px solid #ccc;
+    font-size: 0.9em;
+}
+
+.container .footnote-section h3 { /* For "Notes" heading in Manifesto */
+    font-size: 1.2em;
+    color: #444;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+    border-bottom: none;
+    text-align: left;
+    padding-bottom: 0;
+}
+.container .footnote-section h4 { /* For "Notes" heading in Core Concept */
+    font-size: 1.1em; /* Adjusted from 1.05em to be slightly larger than note text */
+    color: #444;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+    border-bottom: none;
+    text-align: left;
+    padding-bottom: 0;
+}
+
+.container .footnote {
+    margin-bottom: 0.5em;
+    text-indent: 0;
+}
+
+.container .footnote sup, .container #ref1, .container #ref2_core {
+    line-height: 0;
+}
+
+/* General list styling for main content (index.html) and document pages */
+ul, ol { /* Applied broadly, can be refined with more specific selectors if needed */
+    padding-left: 25px; /* Indent lists */
+    margin-bottom: 1em;
+}
+li {
+    margin-bottom: 0.6em;
+}
+
+/* Specific styling for nested lists in LSC overview (index.html) */
+.main-content .lsc-overview-core ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+.main-content .lsc-overview-core ol ol {
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+.main-content .lsc-overview-core ol ol li p {
+    text-indent: 0;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-container { /* For index.html */
+        flex-direction: column;
+        margin: 10px;
+    }
+    .main-content { /* For index.html */
+        border-right: none;
+    }
+    .sidebar { /* For index.html */
+         border-left: none;
+         border-top: 1px solid #eee;
+    }
+    .main-content, .sidebar { /* For index.html */
+        padding: 20px;
+    }
+    .profile-image-container img { /* For index.html */
+        width: 100px;
+    }
+
+    .container { /* For document pages */
+        margin: 1cm auto;
+        padding: 1em;
+        max-width: 95%; /* Allow more width on mobile for docs */
+    }
+
+    body {
+        font-size: 9.5pt;
+    }
+    h1 { /* General h1 adjustment for mobile */
+        font-size: 1.6em;
+    }
+    .container h1 { /* Doc page H1 */
+        font-size: 18pt;
+    }
+    .container h2 { /* Doc page H2 */
+        font-size: 14pt;
+    }
+    .container h3 { /* Doc page H3 */
+        font-size: 12pt;
+    }
+    .sidebar h3 { /* index.html sidebar H3 */
+        font-size: 1.2em;
+    }
+}

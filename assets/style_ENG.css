@@ -1,0 +1,326 @@
+/* assets/style_ENG.css - For English LSC Website */
+
+/* Basic Reset & Normalization */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Standard English font stack */
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 11pt;
+}
+
+/* --- Styles for index_ENG.html (and index.html) --- */
+.header-image { /* Added a container for the header image */
+    width: 100%;
+    overflow: hidden; /* Ensure image doesn't overflow its container */
+}
+.header-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%; /* Ensure image is responsive */
+}
+
+.page-container { /* Used for index_ENG.html and index.html's 2-column structure */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1200px; /* Max width for the 2-column layout */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.main-content { /* For index_ENG.html and index.html */
+    flex: 3;
+    padding: 25px;
+    min-width: 0; /* Allow flex items to shrink below their content size */
+    /* border-right: 1px solid #eee; /* Optional separator */
+}
+
+.main-content h1 { /* For index_ENG.html and index.html h1 */
+    text-align: center;
+    color: #003366;
+    font-size: 1.8em; /* Relative to body font-size */
+    margin-bottom: 1em;
+}
+
+.profile-image-container { /* For index_ENG.html and index.html */
+    margin-bottom: 20px;
+}
+
+.profile-image-container img { /* For index_ENG.html and index.html */
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+    display: inline-block; /* Allows text-align:center to work */
+}
+
+.profile-details { /* Container for profile text */
+    /* text-align: center; /* If you want profile text centered too */
+}
+
+.profile-details p { /* For index_ENG.html and index.html */
+    margin-bottom: 0.5em;
+    text-indent: 0;
+    text-align: left; /* Default, adjust if centering all profile details */
+}
+.profile-details a { /* For index_ENG.html and index.html */
+    color: #0056b3;
+    text-decoration: none;
+}
+.profile-details a:hover { /* For index_ENG.html and index.html */
+    text-decoration: underline;
+}
+
+.sidebar { /* For index_ENG.html and index.html */
+    flex: 1;
+    padding: 25px;
+    background-color: #f9f9f9;
+    min-width: 220px; /* Minimum width for the sidebar */
+    border-left: 1px solid #eee; /* Separator */
+}
+
+.sidebar h3 { /* For index_ENG.html and index.html */
+    margin-top: 0;
+    color: #003366;
+    font-size: 1.3em;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.sidebar ul { /* For index_ENG.html and index.html */
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+.sidebar ul li { /* For index_ENG.html and index.html */
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a { /* For index_ENG.html and index.html */
+    text-decoration: none;
+    color: #0056b3;
+    font-size: 0.95em;
+}
+
+.sidebar ul li a:hover { /* For index_ENG.html and index.html */
+    text-decoration: underline;
+    color: #003366;
+}
+
+.sidebar hr { /* For index_ENG.html and index.html */
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+/* --- Styles for Document Pages (Manifesto, Core Concept - English) --- */
+.container { /* Used for document pages like Manifesto, Core Concept */
+    margin: 2cm auto;
+    max-width: 18cm; /* A4-like content width */
+    padding: 2em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Headings for Document Pages */
+.container h1 {
+    text-align: center;
+    color: #003366;
+    font-size: 22pt;
+    margin-top: 0;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 0.5em;
+}
+
+.container h2 {
+    color: #004488;
+    font-size: 18pt;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 0.3em;
+}
+
+.container h3 {
+    color: #336699;
+    font-size: 14pt;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+.container h4 {
+    color: #003366;
+    font-size: 1.1em;
+    margin-top: 0;
+    margin-bottom: 0.7em;
+    text-indent: 0;
+}
+
+/* Paragraphs and Text elements for Document Pages */
+.container p {
+    text-indent: 1em;
+    margin-bottom: 1em;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.container strong {
+    font-weight: bold;
+}
+
+.container u {
+    text-decoration: underline;
+    text-decoration-color: #555;
+    text-decoration-thickness: 1px;
+}
+
+.container blockquote {
+    font-style: italic;
+    color: #555;
+    padding-left: 1.5em;
+    border-left: 3px solid #ccc;
+    margin: 0.8em 0 0.8em 1em;
+}
+
+/* Special Sections for Document Pages */
+.container .supplementary-note {
+    background-color: #eef2f7;
+    padding: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border-left: 5px solid #003366;
+    font-size: 0.95em;
+}
+
+.container .supplementary-note p {
+    text-indent: 0;
+}
+
+.container .example-section {
+    margin-top: 1em;
+    padding-left: 1em;
+    border-left: 3px solid #77aaff;
+}
+
+.container .example-section p {
+     margin-bottom: 0.5em;
+}
+
+/* Footnotes for Document Pages */
+.container .footnote-section {
+    margin-top: 3em;
+    padding-top: 1em;
+    border-top: 1px solid #ccc;
+    font-size: 0.9em;
+}
+
+.container .footnote-section h3,
+.container .footnote-section h4 { /* Combined for Notes heading */
+    font-size: 1.2em;
+    color: #444;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+    border-bottom: none;
+    text-align: left;
+    padding-bottom: 0;
+}
+
+.container .footnote {
+    margin-bottom: 0.5em;
+    text-indent: 0;
+}
+
+.container .footnote sup, .container [id^="ref"] { /* More generic for footnote refs */
+    line-height: 0;
+}
+
+/* General list styling for main content (index_ENG.html) and document pages */
+ul, ol { /* Applied broadly */
+    padding-left: 25px;
+    margin-bottom: 1em;
+}
+li { /* Applied broadly */
+    margin-bottom: 0.6em;
+}
+
+/* Specific styling for nested lists in LSC overview (index_ENG.html) */
+.main-content .lsc-overview-core ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+.main-content .lsc-overview-core ol ol {
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+.main-content .lsc-overview-core ol ol li p {
+    text-indent: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-container {
+        flex-direction: column;
+        margin: 10px;
+        border-right: none; /* Remove border for stacked layout */
+    }
+    .main-content {
+        border-right: none;
+    }
+    .sidebar {
+         border-left: none;
+         border-top: 1px solid #eee;
+    }
+    .main-content, .sidebar {
+        padding: 15px; /* Reduced padding for mobile */
+        min-width: 100%; /* Allow full width */
+        flex-basis: auto; /* Reset flex-basis */
+    }
+    .profile-image-container img {
+        width: 100px;
+    }
+
+    .container { /* For document pages */
+        margin: 10px; /* Reduced margin for mobile */
+        padding: 1em;
+        max-width: 100%; /* Use full available width */
+        border-left: none;
+        border-right: none;
+        box-shadow: none; /* Optional: remove shadow on mobile for cleaner look */
+    }
+
+    body {
+        font-size: 10pt; /* Adjusted base font size for mobile */
+    }
+    h1 { /* General h1 adjustment for mobile */
+        font-size: 1.6em;
+    }
+    .container h1 { /* Doc page H1 */
+        font-size: 18pt;
+    }
+    .container h2 { /* Doc page H2 */
+        font-size: 15pt;
+    }
+    .container h3 { /* Doc page H3 */
+        font-size: 12pt;
+    }
+    .sidebar h3 { /* index_ENG.html sidebar H3 */
+        font-size: 1.2em;
+    }
+}
